@@ -27,16 +27,34 @@
             background-color: #777;
         }
         .section {
-            margin: 40px 0;
+            display: none;
+            margin: 40px auto;
+            max-width: 800px;
+            text-align: center;
+        }
+        .section.active {
+            display: block;
+        }
+        table {
+            margin: auto;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f4f4f4;
         }
     </style>
 </head>
 <body>
     <header>
         <nav>
-            <button onclick="scrollToSection('fantasy-teams')">Fantasy Teams</button>
-            <button onclick="scrollToSection('top-players')">Top Players - Last Round</button>
-            <button onclick="scrollToSection('all-time-best-players')">Top Players - All Time</button>
+            <button onclick="showSection('fantasy-teams')">Fantasy Teams</button>
+            <button onclick="showSection('top-players')">Top Players - Last Round</button>
+            <button onclick="showSection('all-time-best-players')">Top Players - All Time</button>
         </nav>
     </header>
     <main>
@@ -143,8 +161,12 @@
          </section>
     </main>
     <script>
-        function scrollToSection(sectionId) {
-            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
         }
     </script>
 </body>
