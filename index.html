@@ -6,15 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fantasy League Dashboard</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        nav {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+        nav button {
+            background-color: #555;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        nav button:hover {
+            background-color: #777;
+        }
+        .section {
+            margin: 40px 0;
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav>
-            <h1>Fantasy League Dashboard</h1>
+            <button onclick="scrollToSection('fantasy-teams')">Fantasy Teams</button>
+            <button onclick="scrollToSection('top-players')">Top Players - Last Round</button>
+            <button onclick="scrollToSection('all-time-best-players')">Top Players - All Time</button>
         </nav>
     </header>
     <main>
-        <section id="fantasy-teams">
+        <section id="fantasy-teams" class="section">
             <h2>Fantasy Teams Table</h2>
             <table>
                 <thead>
@@ -65,7 +91,7 @@
                 </tbody>
             </table>
         </section>
-        <section id="top-players">
+        <section id="top-players" class="section">
             <h2>Top Players - Last Round</h2>
             <div class="player-card-container">
                 <div class="player-card">
@@ -90,7 +116,7 @@
                 </div>
             </div>
         </section>
-        <section id="all-time-best-players">
+        <section id="all-time-best-players" class="section">
             <h2>Top Players - All Time</h2>
             <div class="player-card-container">
                 <div class="player-card">
@@ -116,5 +142,10 @@
             </div>
          </section>
     </main>
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
