@@ -47,6 +47,11 @@
         th {
             background-color: #f4f4f4;
         }
+        .team-players {
+            margin-top: 20px;
+            display: none;
+            text-align: left;
+        }
     </style>
 </head>
 <body>
@@ -71,43 +76,59 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr onclick="showTeamPlayers('team1')">
                         <td>1</td>
-                        <td>The Champions</td>
+                        <td class="team-name">The Champions</td>
                         <td>Alex Johnson</td>
                         <td>120</td>
                         <td>1,250</td>
                     </tr>
-                    <tr>
+                    <tr onclick="showTeamPlayers('team2')">
                         <td>2</td>
-                        <td>Golden Strikers</td>
+                        <td class="team-name">Golden Strikers</td>
                         <td>Maria Gonzalez</td>
                         <td>110</td>
                         <td>1,230</td>
                     </tr>
-                    <tr>
+                    <tr onclick="showTeamPlayers('team3')">
                         <td>3</td>
-                        <td>Dream XI</td>
+                        <td class="team-name">Dream XI</td>
                         <td>Liam Smith</td>
                         <td>115</td>
                         <td>1,200</td>
                     </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Fantasy Kings</td>
-                        <td>Sophia Lee</td>
-                        <td>105</td>
-                        <td>1,180</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Goal Hunters</td>
-                        <td>Omar Al-Farooq</td>
-                        <td>100</td>
-                        <td>1,150</td>
-                    </tr>
                 </tbody>
             </table>
+            <div id="team1" class="team-players">
+                <h3>Players for "The Champions"</h3>
+                <ul>
+                    <li>Player 1: John Doe - 40 points</li>
+                    <li>Player 2: Mark King - 35 points</li>
+                    <li>Player 3: Alice Brown - 30 points</li>
+                    <li>Player 4: Sam Wilson - 28 points</li>
+                    <li>Player 5: Nina Davis - 25 points</li>
+                </ul>
+            </div>
+            <div id="team2" class="team-players">
+                <h3>Players for "Golden Strikers"</h3>
+                <ul>
+                    <li>Player 1: Mike Ross - 38 points</li>
+                    <li>Player 2: Sarah Lee - 34 points</li>
+                    <li>Player 3: Tom Parker - 32 points</li>
+                    <li>Player 4: Emma White - 29 points</li>
+                    <li>Player 5: Liam Adams - 27 points</li>
+                </ul>
+            </div>
+            <div id="team3" class="team-players">
+                <h3>Players for "Dream XI"</h3>
+                <ul>
+                    <li>Player 1: Chris Stone - 36 points</li>
+                    <li>Player 2: Jenna Fox - 33 points</li>
+                    <li>Player 3: Aaron Black - 31 points</li>
+                    <li>Player 4: Ruby Scott - 28 points</li>
+                    <li>Player 5: Ryan Clark - 26 points</li>
+                </ul>
+            </div>
         </section>
         <section id="top-players" class="section">
             <h2>Top Players - Last Round</h2>
@@ -121,16 +142,6 @@
                     <h3>Player: Sarah Connor</h3>
                     <p>Position: Midfielder</p>
                     <p>Points: 28</p>
-                </div>
-                <div class="player-card">
-                    <h3>Player: Mike Ross</h3>
-                    <p>Position: Defender</p>
-                    <p>Points: 25</p>
-                </div>
-                <div class="player-card">
-                    <h3>Player: Anna Smith</h3>
-                    <p>Position: Goalkeeper</p>
-                    <p>Points: 24</p>
                 </div>
             </div>
         </section>
@@ -147,18 +158,8 @@
                     <p>Position: Midfielder</p>
                     <p>Total Points: 950</p>
                 </div>
-                <div class="player-card">
-                    <h3>Player: Harry Blake</h3>
-                    <p>Position: Defender</p>
-                    <p>Total Points: 900</p>
-                </div>
-                <div class="player-card">
-                    <h3>Player: Chris Adams</h3>
-                    <p>Position: Goalkeeper</p>
-                    <p>Total Points: 870</p>
-                </div>
             </div>
-         </section>
+        </section>
     </main>
     <script>
         function showSection(sectionId) {
@@ -167,6 +168,14 @@
                 section.classList.remove('active');
             });
             document.getElementById(sectionId).classList.add('active');
+        }
+
+        function showTeamPlayers(teamId) {
+            const teams = document.querySelectorAll('.team-players');
+            teams.forEach(team => {
+                team.style.display = 'none';
+            });
+            document.getElementById(teamId).style.display = 'block';
         }
     </script>
 </body>
