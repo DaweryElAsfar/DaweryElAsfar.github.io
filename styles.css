@@ -3,6 +3,7 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
 header nav {
@@ -10,39 +11,106 @@ header nav {
     color: #fff;
     padding: 1rem;
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 main {
     padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 2rem;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 table th, table td {
     border: 1px solid #ddd;
-    padding: 0.5rem;
+    padding: 0.75rem;
     text-align: center;
 }
 
 table th {
     background-color: #333;
     color: #fff;
+    text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
 }
 
 .player-card-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 1.5rem;
+    justify-content: center;
 }
 
 .player-card {
     background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 1.5rem;
     flex: 1 1 30%;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.player-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.player-card h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #0044cc;
+}
+
+.player-card p {
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.player-card p span {
+    font-weight: bold;
+    color: #0044cc;
+}
+
+.team-players ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.team-players li {
+    background-color: #e9f1ff;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.team-players li:hover {
+    background-color: #cce1ff;
+}
+
+h2, h3 {
+    color: #0044cc;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 1rem;
 }
