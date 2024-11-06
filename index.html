@@ -113,56 +113,108 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr onclick="showTeamPlayers('team1-details')">
+                    <tr>
                         <td>1</td>
-                        <td class="team-name">يسي</td>
+                        <td>يسي</td>
                         <td>1,500</td>
                     </tr>
-                    <tr onclick="showTeamPlayers('team2-details')">
+                    <tr>
                         <td>2</td>
-                        <td class="team-name">حمادة</td>
+                        <td>حمادة</td>
                         <td>1,480</td>
                     </tr>
-                    <tr onclick="showTeamPlayers('team3-details')">
+                    <tr>
                         <td>3</td>
-                        <td class="team-name">بافلي عزيز</td>
+                        <td>بافلي عزيز</td>
                         <td>1,460</td>
                     </tr>
-                    <!-- Add more rows as needed -->
+                    <tr>
+                        <td>4</td>
+                        <td>بافلي منير</td>
+                        <td>1,440</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>ماريو نادر</td>
+                        <td>1,420</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>سيف البير</td>
+                        <td>1,400</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>رفيق يعقوب</td>
+                        <td>1,380</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>كيرلس</td>
+                        <td>1,360</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>فادي</td>
+                        <td>1,340</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>لوقا</td>
+                        <td>1,320</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>بيشوي</td>
+                        <td>1,300</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>يوسف</td>
+                        <td>1,280</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>مينا</td>
+                        <td>1,260</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>فيلو</td>
+                        <td>1,240</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>وسيم</td>
+                        <td>1,220</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>رضا</td>
+                        <td>1,200</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>روماني</td>
+                        <td>1,180</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>مكاريوس</td>
+                        <td>1,160</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>رافت</td>
+                        <td>1,140</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>ايمن</td>
+                        <td>1,120</td>
+                    </tr>
                 </tbody>
             </table>
-
-            <!-- Team player details -->
-            <div id="team1-details" class="team-players">
-                <h3>Players for "يسي"</h3>
-                <ul>
-                    <li>Player 1: Ahmed Salah - 40 points</li>
-                    <li>Player 2: Omar Hassan - 38 points</li>
-                    <li>Player 3: Youssef Ali - 35 points</li>
-                    <li>Player 4: Mostafa Nabil - 30 points</li>
-                    <li>Player 5: Amr Fouad - 28 points</li>
-                </ul>
-            </div>
-            <div id="team2-details" class="team-players">
-                <h3>Players for "حمادة"</h3>
-                <ul>
-                    <li>Player 1: Tamer Samir - 39 points</li>
-                    <li>Player 2: Hani Reda - 37 points</li>
-                    <li>Player 3: Bassem Ghaly - 34 points</li>
-                    <li>Player 4: Mohamed Zaki - 32 points</li>
-                    <li>Player 5: Samir Abbas - 29 points</li>
-                </ul>
-            </div>
-            <div id="team3-details" class="team-players">
-                <h3>Players for "بافلي عزيز"</h3>
-                <ul>
-                    <li>Player 1: Karim Samy - 42 points</li>
-                    <li>Player 2: Fady Naguib - 36 points</li>
-                    <li>Player 3: Hossam Khaled - 33 points</li>
-                    <li>Player 4: Peter Wadie - 31 points</li>
-                    <li>Player 5: Mina Boutros - 30 points</li>
-                </ul>
-            </div>
         </section>
 
         <section id="top-players" class="section">
@@ -204,14 +256,6 @@
                 section.classList.remove('active');
             });
             document.getElementById(sectionId).classList.add('active');
-        }
-
-        function showTeamPlayers(teamId) {
-            const teams = document.querySelectorAll('.team-players');
-            teams.forEach(team => {
-                team.style.display = 'none';
-            });
-            document.getElementById(teamId).style.display = 'block';
         }
     </script>
 </body>
