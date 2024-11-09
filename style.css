@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url("https://raw.githubusercontent.com/DaweryElAsfar/DaweryElAsfar.github.io/refs/heads/main/modern-cricket-stadium-night.jpg"); /* Replace with your image URL */
+    background-image: url("https://<USERNAME>.github.io/<REPOSITORY_NAME>/background.jpg"); /* Replace with your image URL */
     background-size: cover; /* Cover the entire viewport */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent the image from repeating */
@@ -59,28 +59,29 @@ table {
     max-width: 800px;
     border-collapse: collapse;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: white; /* Table background */
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background for the table */
 }
 
 th, td {
-    border: 1px solid #ddd;
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Semi-transparent border */
     padding: 12px;
     text-align: center;
+    color: white; /* White text color */
 }
 
 th {
-    background-color: #f4f4f4;
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent background for header */
     font-weight: bold;
 }
 
 tbody tr:hover {
-    background-color: #f1f1f1;
+    background-color: rgba(255, 255, 255, 0.1); /* Light hover effect */
 }
 
 /* Special Style for the First Rank */
 tbody tr:first-child {
-    background-color: #ffeb3b;
-    color: #333;
+    background-color: rgba(255, 235, 59, 0.8); /* Semi-transparent yellow for first rank */
+    color: #333; /* Dark text for contrast */
     font-weight: bold;
     animation: first-rank-glow 2s infinite alternate;
 }
