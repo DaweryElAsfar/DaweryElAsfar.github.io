@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url("https://<USERNAME>.github.io/<REPOSITORY_NAME>/background.jpg"); /* Replace with your image URL */
+    background-image: url("https://raw.githubusercontent.com/DaweryElAsfar/DaweryElAsfar.github.io/refs/heads/main/modern-cricket-stadium-night.jpg"); /* Replace with your image URL */
     background-size: cover; /* Cover the entire viewport */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent the image from repeating */
