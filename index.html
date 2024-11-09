@@ -5,6 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fantasy League Dashboard</title>
+        <style>
+        /* CSS styles */
+        body {
+            background-image: url('/mnt/data/modern-cricket-stadium-night.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+        nav button {
+            background-color: #555;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        nav button:hover {
+            background-color: #777;
+        }
+        .section {
+            display: none;
+            margin: 40px auto;
+            max-width: 800px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.8); /* semi-transparent background */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .section.active {
+            display: block;
+        }
+        table {
+            margin: auto;
+            width: 100%;
+            border-collapse: collapse;
+            color: white;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #333;
+        }
+    </style>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
