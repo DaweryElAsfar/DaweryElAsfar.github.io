@@ -11,12 +11,12 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: #f1f1f1;
+    color: #d0d0d0; /* Softer white for better readability */
 }
 
 /* Navigation Bar */
 nav {
-    background-color: rgba(44, 62, 80, 0.8);
+    background-color: rgba(30, 39, 46, 0.9); /* Darker navy background */
     color: white;
     display: flex;
     justify-content: space-around;
@@ -24,7 +24,7 @@ nav {
 }
 
 nav button {
-    background-color: #34495e;
+    background-color: #2d3436; /* Darker shade for buttons */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -35,7 +35,7 @@ nav button {
 }
 
 nav button:hover {
-    background-color: #16a085;
+    background-color: #0984e3; /* Dark cyan on hover */
 }
 
 /* Section Styling */
@@ -59,42 +59,42 @@ table {
     max-width: 800px;
     border-collapse: collapse;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(50, 50, 50, 0.8); /* Darker background for the table */
 }
 
 th, td {
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 12px;
     text-align: center;
-    color: #e0e0e0; /* Lighter color for readability */
-    font-family: 'Verdana', sans-serif; /* Clear, readable font */
+    color: #e0e0e0; /* Light gray for readability */
+    font-family: 'Verdana', sans-serif;
     font-size: 1rem;
 }
 
 th {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(34, 47, 62, 0.9); /* Darker navy for headers */
     font-weight: bold;
-    color: #ffeb3b; /* Bright yellow for column headers */
+    color: #dfe6e9; /* Light gray for contrast */
 }
 
 tbody tr:hover {
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.05); /* Subtle hover effect */
 }
 
 /* Special Style for the First Rank */
 tbody tr:first-child {
-    background-color: rgba(255, 215, 0, 0.8); /* Gold for first place */
-    color: #333; /* Darker text for contrast */
+    background-color: rgba(45, 52, 54, 0.9); /* Dark color for first rank */
+    color: #00cec9; /* Highlighted cyan text */
     font-weight: bold;
     animation: first-rank-glow 2s infinite alternate;
 }
 
 @keyframes first-rank-glow {
     from {
-        box-shadow: 0 0 10px #ffd700;
+        box-shadow: 0 0 10px #81ecec;
     }
     to {
-        box-shadow: 0 0 20px #ffae42;
+        box-shadow: 0 0 20px #00cec9;
     }
 }
 
@@ -108,8 +108,8 @@ tbody tr:first-child {
 }
 
 .player-card {
-    background-color: rgba(44, 62, 80, 0.9);
-    color: #ffffff;
+    background-color: rgba(34, 47, 62, 0.9); /* Dark navy background */
+    color: #dfe6e9;
     border-radius: 12px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     padding: 20px;
@@ -128,10 +128,10 @@ tbody tr:first-child {
 .player-card h3 {
     font-size: 1.4rem;
     margin-bottom: 10px;
-    color: #ffeb3b; /* Bright yellow for player name */
+    color: #00cec9; /* Bright cyan for player name */
 }
 
 .player-card p {
     font-size: 1rem;
-    color: #dcdcdc; /* Soft light color for player details */
+    color: #b2bec3; /* Softer light gray for player details */
 }
