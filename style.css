@@ -167,25 +167,3 @@ tbody tr:first-child {
     font-size: 1rem;
     color: #b2bec3;
 }
-
-
-/* Top 3 Styling */
-
-.gold {
-    background: linear-gradient(90deg,#FFD700,#ffea70);
-    color: #000;
-    font-weight: bold;
-}
-
-.silver {
-    background: linear-gradient(90deg,#C0C0C0,#ececec);
-    color: #000;
-    font-weight: bold;
-}
-
-.bronze {
-    background: linear-gradient(90deg,#cd7f32,#e0a96d);
-    color: #000;
-    font-weight: bold;
-}
-
